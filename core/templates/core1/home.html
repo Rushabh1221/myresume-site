@@ -1,0 +1,20 @@
+{% extends 'core1/base.html' %}
+{% load static %}
+{% block content %}
+   <div class="text-center mt-5">
+    <img src="{% static 'core/images/resume.png' %}" alt="Profile" class="img-thumbnail" width="200px" height="250px">
+    <div class="text-white mt-5 mx-5 text-justify">
+        <h2 class="font-weight-bold st-font">Greeting to everyone,</h2>
+        <div class="px-4" style="line-height:2rem;">
+           <p style="text-indent:100px;"> This is <b class="text-warning">Rudra Solanki</b> having 2 years experience of Full-Stack Web Development for globally,
+                I offer the technical expertise you are seeking for your web developer position.</p>
+            <p>Since earning my degree in <b class="text-warning">Computer-Science</b> from <b class="text-warning">LDCE</b>, I served at
+            <b class="text-warning">GS technology</b> which is one of the biggest technical firm.In this firm I have led many web projects for clients for that industries 
+        including technology, hospitality, financial services and so on. </p> 
+        <p>I have given my best in these projects and in future I'll do my best in my work.</p> 
+        </div>
+    </div>
+    <a href="{% url 'Contact' %}" class="btn btn-outline-warning my-3 mr-5">CONTACT</a>
+    <a href="" class="btn btn-outline-info my-3 mr-5">HIRE ME</a>
+   </div>
+ {% endblock content %}

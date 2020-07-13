@@ -1,0 +1,61 @@
+{% extends 'core1/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-3">
+    <h1 class="text-warning border-bottom mb-5">CONTACT US</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">
+            Please share your informatin here and don't hesitate to contact.This will
+            very helpful for us.
+        </p>
+        <div class="col-sm-9 mb-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">NAME:</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">EMAIL ID:</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject">SUBJECT</label>
+                    <input type="text" class="form-control" id="inputSubject">
+                </div>
+                <div class="mb-3">
+                    <label for="inputTextarea">MESSAGE*:</label>
+                    <textarea class="form-control" id="inputTextarea" cols="30" required></textarea>
+                </div>
+                <form action="">
+                    <input type="button" value="DONE" class="btn btn-primary" onclick="done()">
+                </form>
+                <script src="{% static 'core/js/bt.js' %}"></script>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fas fa-map-marker-alt fa-3x i-color"></i>
+                    <p>Pune, Bangluru, India</p>
+                </li>
+                <li>
+                    <i class="fas fa-phone mt-4 fa-3x i-color"></i>
+                    <p>+ 91 9000678045</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope mt-4 fa-3x i-color"></i>
+                    <p>techno@email.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="#" target="blank"><i class="fab fa-twitter fa-2x i-color mr-3"></i></a>
+        <a href="#" target="blank"><i class="fab fa-facebook fa-2x i-color mr-3"></i></a>
+        <a href="#" target="blank"><i class="fab fa-instagram fa-2x i-color mr-3"></i></a>
+        <a href="#" target="blank"><i class="fab fa-dribbble fa-2x i-color mr-3"></i></a>
+    </div>
+</div>
+{% endblock content %}

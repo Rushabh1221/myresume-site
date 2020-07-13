@@ -1,0 +1,13 @@
+{% load static %}
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/resume.png' %}" alt="Profile" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+    </div>
+    <h3 class="text-white mt-3 st-font text-center">Rudra Solanki</h3>
+   <nav class="nav flex-column text-center">
+       <a href="{% url 'Home' %}" class="nav-link {{Home}}">Home</a>
+       <a href="{% url 'Services' %}" class="nav-link {{Services}}">Services</a>
+       <a href="{% url 'Skill' %}" class="nav-link {{Skill}}">Skill</a>
+       <a href="{% url 'Contact' %}" class="nav-link {{Contact}}">Contact</a>
+   </nav> 
+</div>

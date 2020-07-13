@@ -1,0 +1,31 @@
+/*font*/
+.st-font {
+    font-family: 'Satisfy', cursive;
+}
+html,
+body {
+    height: 100%;
+}
+.container-fluid {
+    min-height: 100%;
+}
+/* service icon and subtitle color */
+.i-color {
+    color: limegreen;
+}
+.ss-color {
+    color: linen;
+}
+/* for link */
+a.nav-link {
+    color: palegoldenrod;
+}
+a.nav-link:hover {
+    color: bisque;
+    background-color: gold;
+}
+a.nav-link.active {
+    color: bisque;
+    background-color: #ffc107;
+    font-weight: bold;
+}
